@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+
+<head>
+
+	<title>Delicious - The Best Food Blog on the Web</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css" />
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+
+	<script type="text/javascript">
+
+		jQuery(function(){
+			$(".ingredient").live('click', function() {
+		 		if ($(this).attr("class") == "ingredient") {
+					this.src = this.src.replace("_off","_bg");
+				} else {
+					this.src = this.src.replace("_bg","_off");
+				}
+				$(this).toggleClass("on");
+			});
+		});
+	</script>
+
+</head>
+
+<body>
+
+	<div class="container">
+
+		<header>
+
+			<a href="#"><img class="logo" src="images/Delicious_Logo.png" /></a>
+
+			<div id="share">
+
+				<div id="social">
+
+					<a href="#"><img class="social" src="images/Facebook.png" /></a>
+					<a href="#"><img class="social" src="images/Twitter.png" /></a>
+					<a href="#"><img class="social" src="images/Google+.png" /></a>
+					<a href="#"><img class="social" src="images/Instagram.png" /></a>
+					<a href="#"><img class="social" src="images/Flickr.png" /></a>
+					<a href="#"><img class="social" src="images/Pinterest.png" /></a>
+					
+				</div>
+
+				<div id="social">
+
+					<a href="#"><img class="social" src="images/RSS.png" /></a>
+					<a href="#"><img class="social" src="images/Mail.png" /></a>
+					
+				</div>
+
+			</div>
+
+		</header>
+
+		<img class="hashes" src="images/Hashes.png" />
+
+		<article>
+			
+		<h1 class="article_title">Chocolate Pizza</h1>
+		<h2 class="date">POSTED ON 15 DEC 2013 / DESSERTS</h2>
+		
+		<div class="print">
+
+			<a href="#"><img class="printer-icon" src="images/Print.png" />
+			<h2>PRINT</h2>
+			</a>
+
+		</div>
+
+		<img class="article_photo" src="images/Chocolate_Pizza.png" />
+
+		<p class="article_body">For the fig-swirl: Melt butter over medium heat in a saucepan. Add brown sugar and stir to dissolve. Halve all of the figs and toss in the saucepan with water and lemon juice. Cook over medium heat, stirring frequently, until you have a chunky-jammy mixture. Add salt with one or two stirs, set aside and let cool completely.</p>
+
+		<p class="article_body">Ice cream: In a small pot over medium heat, combine milk, and grandulated sugar until sugar is completely dissolved and the milk is just barely luke warm. Whisk in the egg yolks. Set mixture in the fridge and wait until the fig mixture is cooled.</p>
+
+		<p class="article_body">Using an ice cream machine, pour liquids into the frozen basin and process according to manufacturer instructions, i.e., let spin and thicken for 20 minutes before adding mascarpone, fig jam mixture, and the nuts, Continue to process for +/- 10 minutes. Pour semi-frozen mixture into a pyrex dish or glass tupperware. Freeze for at least two hours before serving.</p>
+
+		<div class="ingredients">
+
+			<div class="left_list">
+
+				<ul>
+
+					<li><img  class="ingredient" id="milk" src="images/ingredients/milk_off.png" /></li>
+					<li><img  alt class="ingredient" id="mascarpone" src="images/ingredients/mascarpone_off.png" /></li>
+					<li><img  class="ingredient" id="salt" src="images/ingredients/salt_off.png" /></li>
+					<li><img  class="ingredient" id="figs" src="images/ingredients/figs_off.png" /></li>
+					<li><img  class="ingredient" id="brown_sugar" src="images/ingredients/brown_sugar_off.png" /></li>
+					<li><img  class="ingredient" id="water" src="images/ingredients/water_off.png" /></li>
+					
+				</ul>
+
+			</div>
+
+			<div class="right_list">
+
+				<ul>
+					
+					<li><img  class="ingredient" id="cream" src="images/ingredients/cream_off.png" /></li>
+					<li><img  class="ingredient" id="sugar" src="images/ingredients/sugar_off.png" /></li>
+					<li><img  class="ingredient" id="eggs" src="images/ingredients/eggs_off.png" /></li>
+					<li><img  class="ingredient" id="lemon" src="images/ingredients/lemon_off.png" /></li>
+					<li><img  class="ingredient" id="butter" src="images/ingredients/butter_off.png" /></li>
+					<li><img  class="ingredient" id="pecans" src="images/ingredients/pecans_off.png" /></li>
+
+				</ul>
+				
+			</div>
+
+		</div>
+
+		<img class="hashes" src="images/Hashes.png" />
+
+		<div class="author_info">
+			
+			<img class="author_photo" src="images/Vanessa.png" />
+
+			<a href="#"><img src="images/Share_Recipe.png" /></a>
+
+			<div class="about">
+
+				<h3 class="author_name">Vanessa Stevenson</h3>
+
+				<p class="author_bio">Food enthusiast, photography fan. Add a pinch of raw foodism and that's pretty much who I am.</p>
+
+			</div>
+
+			
+
+		</div>
+
+		</article>
+
+		<footer>
+			
+		<img src="images/Footer_Logo.png" />
+
+		<p class="copywrite">Delicious &#169 2013 &#8226 All Rights Reserved.</p>
+
+		<p class="attribution">Proudly published with Ghost.</p>
+
+		</footer>
+
+	</div>
+
+</body>
